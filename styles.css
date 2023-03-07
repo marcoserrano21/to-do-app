@@ -1,0 +1,113 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: #4e4cff;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: 400px;
+    position: relative;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+.newTask {
+    position: relative;
+    padding: 30px 20px;
+}
+
+.newTask input {
+    width: 80%;
+    height: 45px;
+    font-size: 15px;
+    border: 2px solid #d1d3d4;
+    padding: 12px;
+    color: #111;
+    position: relative;
+    border-radius: 5px;
+}
+
+.newTask input:focus {
+    outline: none;
+    border-color: #4e4cff;
+}
+
+.newTask button {
+    position: relative;
+    float: right;
+    width: 45px;
+    height: 45px;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #4e4cff;
+    border: none;
+    color: #f1f1f1;
+    cursor: pointer;
+    outline: none;
+}
+
+#tasks {
+    background-color: #f1f1f1;
+    padding: 30px 20px;
+    margin-top: 5px;
+    border-radius: 10px;
+    width: 100%;
+    position: absolute;
+}
+
+.task {
+    background-color: #e5e5e5;
+    height: 50px;
+    margin-bottom: 8px;
+    padding-left: 5px;
+    display: flex;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.task:hover {
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+.task span {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.delete {
+    background-color: red;
+    color: #f1f1f1;
+    height: 100%;
+    width: 50px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.taskCheck {
+    display: flex;
+    align-items: center;
+}
+
+.taskCheckbox {
+    height: 25px;
+    width: 25px;
+    margin-right: 5px;
+}
+
+.taskCheckbox:checked+#taskname {
+    text-decoration: line-through;
+}
