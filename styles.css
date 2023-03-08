@@ -6,8 +6,12 @@
 
 body {
     height: 100vh;
-    background: #4e4cff;
+    background: #111;
     font-family: 'Poppins', sans-serif;
+}
+
+body::-webkit-scrollbar {
+    display: none;
 }
 
 .container {
@@ -111,3 +115,4 @@ body {
 .taskCheckbox:checked+#taskname {
     text-decoration: line-through;
 }
+
