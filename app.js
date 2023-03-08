@@ -39,6 +39,15 @@
 // Initialize a variable to keep track of the number of tasks added
 var taskCount = 0;
 
+// Add a keydown event listener to the input field
+var taskInput = document.querySelector('#newtask input');
+taskInput.addEventListener('keydown', function(event) {
+  if (event.key === 'Enter') { // Check if the Enter key is pressed
+    event.preventDefault(); // Prevent the default behavior of the Enter key
+    document.querySelector('#add').click(); // Simulate a click on the "Add" button
+  }
+});
+
 // Add a click event listener to the "Add" button
 document.querySelector('#add').onclick = function () {
     var taskInput = document.querySelector('#newtask input');
@@ -85,3 +94,4 @@ document.querySelector('#add').onclick = function () {
         }
     }
 };
+
