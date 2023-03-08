@@ -116,3 +116,23 @@ body::-webkit-scrollbar {
     text-decoration: line-through;
 }
 
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 90%;
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 320px) {
+  .container {
+    width: 90%;
+    max-width: 300px;
+  }
+}
