@@ -144,7 +144,7 @@ button#add i{
     }
     
 button#add:hover {
-    background-color: #4e4cff;
+    background-color: #3936ff;
     }
     
 button#add:active {
@@ -152,8 +152,13 @@ button#add:active {
     }
     
 .deleteButton {
-    background-color: #ff8b7a;
+    background-color: #ff6249;
     }
+
+.deleteButton:hover {
+    background-color: #ff2c21;
+}
+
 
 /* Media queries */
 
